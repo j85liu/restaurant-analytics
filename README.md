@@ -1,5 +1,9 @@
 # restaurant-analytics
 
+
+## File Structure
+
+```
 restaurant-analytics/
 │
 ├── data/
