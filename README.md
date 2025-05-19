@@ -42,7 +42,7 @@ restaurant-analytics/
 # Restaurant Chain Performance Analytics
 
 ## Project Overview
-This project demonstrates the analysis of transaction data from multiple restaurant chains to derive business insights, calculate KPIs, and forecast future performance. It showcases my ability to leverage consumer transaction data to produce bi-quarterly estimates and reports similar to my experience analyzing companies like DPZ, WEN, QSR, and PZZA.
+This project demonstrates the analysis of transaction data from multiple restaurant chains to derive business insights, calculate KPIs, and forecast future performance.
 
 ## Skills Demonstrated
 - **Data Processing**: Using PySpark to process and analyze large datasets
@@ -63,13 +63,6 @@ This project demonstrates the analysis of transaction data from multiple restaur
 5. **Forecasting**: Created time-series forecasts for upcoming quarters
 6. **Visualization**: Developed Tableau dashboards for stakeholder presentation
 
-## Key Findings
-- Restaurant X shows the highest average order value but lowest customer retention
-- Location Y consistently outperforms other locations across all restaurant chains
-- Weather conditions significantly impact delivery orders
-- Customer retention shows strong seasonal patterns
-- [Other insights from your analysis]
-
 ## Tools Used
 - **Apache Spark**: For large-scale data processing
 - **PostgreSQL**: For data storage and retrieval
@@ -80,6 +73,3 @@ This project demonstrates the analysis of transaction data from multiple restaur
 - Integrate more advanced forecasting methods (ARIMA, Prophet)
 - Add real-time data streaming capabilities
 - Develop ML models to predict customer churn
-
-## How This Relates to My Professional Experience
-This project demonstrates similar techniques to those I used when analyzing consumer transaction data for publicly traded companies. The approach of synthesizing large datasets, calculating KPIs, and presenting findings through visualizations mirrors my professional work in analyzing restaurant chains and technology companies.
