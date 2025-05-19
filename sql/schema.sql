@@ -1,14 +1,11 @@
--- Create a database for restaurant analytics
-CREATE DATABASE RestaurantAnalytics;
-
 -- Create a staging table for transaction data
 CREATE TABLE staging_transactions (
     TransactionID INT PRIMARY KEY,
     CustomerID VARCHAR(10),
     Restaurant VARCHAR(20),
     Location VARCHAR(20),
-    TransactionDate DATE,
-    TransactionTime TIME,
+    Date DATE,                              -- Changed from TransactionDate
+    Time TIME,                              -- Changed from TransactionTime
     OrderType VARCHAR(15),
     PaymentMethod VARCHAR(20),
     ItemsOrdered TEXT,
@@ -18,14 +15,20 @@ CREATE TABLE staging_transactions (
     Tip DECIMAL(10,2),
     DeliveryFee DECIMAL(10,2),
     Total DECIMAL(10,2),
-    ProcessingTimeMin INT,
+    ProcessingTimeMin DECIMAL(10,2),        -- Changed from INT to DECIMAL
     EmployeeID VARCHAR(10),
     Weather VARCHAR(15),
     PromotionCode VARCHAR(15),
-    SatisfactionRating INT,
+    SatisfactionRating DECIMAL(5,2),        -- Changed from INT to DECIMAL
     TransactionType VARCHAR(10),
+    RefundReason VARCHAR(50),               -- Added column
+    OriginalTransactionID VARCHAR(10),      -- Added column
+    IsDuplicate BOOLEAN,                    -- Added column
+    IsRefund BOOLEAN,                       -- Added column
+    DateTime TIMESTAMP,                     -- Added column
     Year INT,
     Month INT,
+    Day INT,                                -- Added column
     DayOfWeek VARCHAR(10),
     Hour INT
 );
