@@ -3,28 +3,37 @@
 restaurant-analytics/
 │
 ├── data/
-│   ├── restaurant_transactions_cleaned.xlsx
-│   └── output/
+│   ├── restaurant_transactions_cleaned.xlsx   # Cleaned transaction data
+│   └── restaurant_transactions_cleaned.csv    # CSV version of cleaned data
+│
+├── output/
+│   ├── restaurant_kpis.csv                    # Generated KPI metrics
+│   ├── customer_retention.csv                 # Customer retention analysis
+│   └── quarterly_forecasts.csv                # Revenue forecasts
+│
+├── lib/
+│   └── postgresql-42.6.0.jar                  # PostgreSQL JDBC driver
 │
 ├── sql/
-│   ├── schema.sql          # Database schema
-│   └── queries.sql         # KPI queries
+│   ├── schema.sql                             # Database schema
+│   └── queries.sql                            # KPI queries
 │
 ├── spark/
-│   ├── data_processing.py  # PySpark data transformation
-│   └── time_series.py      # Time series analysis
+│   ├── data_processing.py                     # PySpark data transformation
+│   └── time_series.py                         # Time series analysis
 │
 ├── forecasting/
-│   └── prophet_forecast.py # Forecasting models
+│   └── prophet_forecast.py                    # Forecasting models
 │
 ├── pipeline/
-│   └── etl_pipeline.py     # ETL pipeline code
+│   └── etl_pipeline.py                        # ETL pipeline code
 │
 ├── tableau/
-│   └── README.md           # Documentation for Tableau workbooks
+│   ├── restaurant_analytics.twbx              # Tableau workbook
+│   └── README.md                              # Documentation for Tableau workbooks
 │
-├── README.md               # Project overview
-└── requirements.txt        # Python dependencies
+├── README.md                                  # Project overview
+└── requirements.txt                           # Python dependencies
 
 # Restaurant Chain Performance Analytics
 
